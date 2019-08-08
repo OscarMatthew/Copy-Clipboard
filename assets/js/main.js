@@ -5,10 +5,6 @@ new ClipboardJS('.btn');
 
 var clipboard = new ClipboardJS('.btn');
 
-clipboard.on('success', function(e) {
-  alert("Copied");
-});
-
 $(document).ready(function () {
   $("#input-url").val(window.location.href);
 });
