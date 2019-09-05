@@ -6,6 +6,6 @@ new ClipboardJS('.btn');
 var clipboard = new ClipboardJS('.btn');
 
 $(document).ready(function () {
-  var pageUrl = encodeURIComponent(document.URL);
-  $("#input-url").val(pageUrl);
+  var currentUrl = document.URL;
+  $("#input-url").val(currentUrl);
 });
